@@ -1,0 +1,184 @@
+/* overall setting */
+* {
+  border-radius: 0 !important;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+}
+
+/* Font1: 'Quintessential', cursive;; */
+.font1{
+  font-family: 'Quintessential', cursive;
+  font-style: italic;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Customize rows */
+.row {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajust website apperance according to devices */
+
+/* Portrait tablet to desktop */
+@media (min-width: 768px) {
+  
+  .top{
+    background: url('../images/still.jpg') center center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    font-size: 32px;
+  }
+  
+  #hashtag{
+    font-size: 20px;
+  }
+  
+
+  #intro_shadow{
+    padding: 10px;
+    font-size: 34px;
+    color: white;
+    background-color: #0C0C21;
+  }
+
+  #glamour-logo{
+    display: inline-block;
+  }
+
+}
+
+/* Portrait mobile to portrait tablet */
+@media(min-width:481px) and (max-width:768px){
+  #intro_shadow{
+    padding: 10px;
+    font-size: 34px;
+    color: white;
+    background-color: #0C0C21;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  #intro_shadow{
+    padding: 10px;
+    font-size: 34px;
+    color: white;
+    background-color: #0C0C21;
+  }
+
+  .top{
+    background-color: white;
+  }
+}
+
+/* Introduction section */
+a, a:link, a:hover, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Content section */
+.number{
+  font-size: 7em;
+  margin: -20px;
+}
+
+.style{
+  font-size: 2em;
+}
+
+.description{
+  font-size: 1.5em;
+}
+
+.buy{
+  display: inline-block;
+  font-size: 1.2em;
+  border: 1px solid;
+  padding:5px;
+}
+
+/*Bottom jumbotron*/
+.bottom {
+  margin-bottom: 0px;
+}
+
+/* Terms and condtions pop up window */
+
+ol { counter-reset: item }
+li { display: block }
+li:before { content: counters(item, ".") " "; counter-increment: item }
+
+#element_to_pop_up{
+  display: none;
+  width: 40%;
+  margin: auto;
+}
+
+#TandCs{
+  background-color: white;
+}
+
+#TandCs > ol, li{
+  text-align: left;
+  line-height: 150%;
+}
+
+#TandCs_title{
+  text-align: left;
+  height: 70px;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0C0C21;
+  margin-bottom: 20px;
+}
+
+#TandCs_title .row{
+  margin: 0px;
+}
+
+#TandCs_title_text{
+  margin: auto;
+  text-align: left;
+}
+
+#TandCs_title_close{
+  text-align: right;
+}
+
+#TandCs_content{
+  margin: 20px;
+  color: black;
+  font-weight: lighter; 
+}
+
+#TandCs_list{
+  margin-left: -40px;
+}
+
+#TandCs_footer{
+  text-align: right;
+  height: 70px;
+  background-color: #D8D3D3;
+  margin-top: 20px;
+}
+
+#TandCs_footer > button{
+  display: inline-block;
+  background-color: #0C0C21;
+  color: white;
+  padding: 10px;
+  border: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+}
